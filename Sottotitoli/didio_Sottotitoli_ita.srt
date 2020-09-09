@@ -1,0 +1,1060 @@
+﻿1
+00:00:03,860 --> 00:00:10,840
+Salve professore, oggi andiamo ad analizzare il Criterio 2.4.8, Location (Posizione),
+
+2
+00:00:10,840 --> 00:00:15,300
+cioè fornire delle informazioni sulla posizione
+
+3
+00:00:15,300 --> 00:00:18,500
+dell'utente in una serie di pagine web.
+
+4
+00:00:18,500 --> 00:00:21,900
+Andiamo ad analizzare le tecniche
+
+5
+00:00:21,900 --> 00:00:24,740
+sufficienti e quelle aggiuntive.
+
+6
+00:00:24,740 --> 00:00:28,260
+Andiamo prima a vederle in generale
+
+7
+00:00:28,260 --> 00:00:31,260
+e poi le vedremo nello specifico con dei test.
+
+8
+00:00:32,220 --> 00:00:34,660
+La prima tecnica sufficiente
+
+9
+00:00:34,660 --> 00:00:38,060
+è fornire all'utente una breadcrumb.
+
+10
+00:00:38,060 --> 00:00:41,480
+La seconda è fornire all'utente una sitemap.
+
+11
+00:00:41,480 --> 00:00:45,760
+La terza è indicare la posizione corrente
+
+12
+00:00:45,760 --> 00:00:48,960
+dell'utente nelle barre di navigazione
+
+13
+00:00:48,960 --> 00:00:50,960
+delle pagine web.
+
+14
+00:00:50,960 --> 00:00:54,940
+La quarta è indentificare
+
+15
+00:00:54,940 --> 00:00:58,380
+una relazione con una pagina,
+
+16
+00:00:58,380 --> 00:01:02,280
+con una quantità più ampia di pagine.
+
+17
+00:01:02,280 --> 00:01:05,260
+Questa tecnica ha una sottotecnica
+
+18
+00:01:05,260 --> 00:01:10,400
+cioè l'utilizzo del "link" element, l'elemento "link"
+
+19
+00:01:10,400 --> 00:01:18,100
+cioè quelle tag non visibili all'utente, come le tag "meta" tag.
+
+20
+00:01:18,100 --> 00:01:21,380
+Invece le tecniche aggiuntive sono due,
+
+21
+00:01:21,380 --> 00:01:25,480
+la prima è fornire in un documento pdf
+
+22
+00:01:25,480 --> 00:01:29,480
+un intestazione e un piè di pagina.
+
+23
+00:01:29,480 --> 00:01:32,820
+La seconda, invece consiste nel specificare
+
+24
+00:01:32,820 --> 00:01:36,380
+in un documento pdf, il numero della pagina.
+
+25
+00:01:37,520 --> 00:01:40,080
+Adesso vediamo l'applicazione
+
+26
+00:01:40,080 --> 00:01:42,380
+delle tecniche sufficienti.
+
+27
+00:01:42,940 --> 00:01:45,740
+Questa prima pagina ci mostra una breve
+
+28
+00:01:45,740 --> 00:01:49,660
+descrizione del mio Criterio e la lista
+
+29
+00:01:49,660 --> 00:01:52,560
+delle tecniche sufficienti che adesso
+
+30
+00:01:52,560 --> 00:01:55,360
+andremo a vedere nello specifico.
+
+31
+00:01:56,000 --> 00:01:58,360
+Qui vediamo l'applicazione della prima
+
+32
+00:01:58,360 --> 00:02:00,360
+tecnica, la navigazione breadcrumb,
+
+33
+00:02:00,360 --> 00:02:03,700
+che mostra all'utente la sua posizione
+
+34
+00:02:03,700 --> 00:02:07,300
+all'interno di una serie di pagine web.
+
+35
+00:02:07,300 --> 00:02:10,540
+Una traccia breadcrumb visualizza
+
+36
+00:02:10,540 --> 00:02:13,540
+anche il percorso che ha intrapreso
+
+37
+00:02:13,540 --> 00:02:16,700
+l'utente per raggiungere una certa pagina  web
+
+38
+00:02:16,700 --> 00:02:19,800
+e permette sempre all'utente
+
+39
+00:02:19,800 --> 00:02:22,640
+di tornare alle pagine precedenti
+
+40
+00:02:22,980 --> 00:02:26,240
+Qui abbiamo un esempio, se l'utente
+
+41
+00:02:26,240 --> 00:02:28,740
+vuole andare in una certa pagina
+
+42
+00:02:28,740 --> 00:02:32,300
+del sito web, per esempio la descrizione
+
+43
+00:02:32,300 --> 00:02:34,300
+della scala dei Turchi per esempio,
+
+44
+00:02:34,300 --> 00:02:37,960
+cliccando questo pulsante l'utente
+
+45
+00:02:37,960 --> 00:02:41,340
+gli verrà indicata in che pagina si trova
+
+46
+00:02:41,340 --> 00:02:44,740
+e ha la possibilità di tornare
+
+47
+00:02:44,740 --> 00:02:47,000
+alle pagine precenti e anche
+
+48
+00:02:47,000 --> 00:02:50,080
+alla pagina iniziale, alla pagina Home.
+
+49
+00:02:50,420 --> 00:02:53,320
+Questo è il codice che ci permette
+
+50
+00:02:53,320 --> 00:02:55,820
+l'applicazione della prima tecnica,
+
+51
+00:02:55,820 --> 00:02:58,560
+cioè la navigazione breadcrumb
+
+52
+00:02:59,240 --> 00:03:03,900
+E' semplicemente una lista che contiene
+
+53
+00:03:03,900 --> 00:03:07,800
+la posizione in cui si trova l'utente
+
+54
+00:03:07,800 --> 00:03:10,900
+e spostandoci nelle varie sezioni
+
+55
+00:03:11,060 --> 00:03:13,980
+troviamo una lista che viene modificata
+
+56
+00:03:13,980 --> 00:03:16,260
+dove è sempre contenuta la posizione
+
+57
+00:03:16,260 --> 00:03:20,080
+dell'utente, ma che permette all'utente
+
+58
+00:03:20,120 --> 00:03:22,560
+di ritornare nelle pagine precedenti,
+
+59
+00:03:22,560 --> 00:03:26,300
+come vediamo in tutte queste pagine.
+
+60
+00:03:26,840 --> 00:03:29,160
+Adesso, vediamo l'applicazione della
+
+61
+00:03:29,160 --> 00:03:32,900
+seconda tecnica, fornire una sitemap.
+
+62
+00:03:33,180 --> 00:03:35,920
+Una sitemap è una pagina web che
+
+63
+00:03:35,920 --> 00:03:38,780
+permette dei collegamenti alle
+
+64
+00:03:38,780 --> 00:03:41,560
+diverse sezioni che possono essere
+
+65
+00:03:41,560 --> 00:03:43,380
+presenti in un sito.
+
+66
+00:03:43,620 --> 00:03:46,500
+Per dare la possibilità che questa
+
+67
+00:03:46,500 --> 00:03:48,840
+mappa del sito sia completa,
+
+68
+00:03:49,100 --> 00:03:53,100
+ogni pagina web elencata nella sitemap,
+
+69
+00:03:53,100 --> 00:03:56,100
+deve contenere un collegamento ad essa.
+
+70
+00:03:56,660 --> 00:04:00,420
+La mappa del sito ha diversi scopi,
+
+71
+00:04:00,860 --> 00:04:04,080
+fornisce un intera panoramica
+
+72
+00:04:04,380 --> 00:04:06,080
+della pagina web,
+
+73
+00:04:06,480 --> 00:04:11,180
+aiuta gli utenti a capire cosa contiene
+
+74
+00:04:11,460 --> 00:04:15,860
+tutto il sito e come è organizzato.
+
+75
+00:04:16,220 --> 00:04:21,580
+E inoltre, è molto facile da comprendere.
+
+76
+00:04:21,860 --> 00:04:26,760
+Adesso vediamo un esempio, ogni sezione
+
+77
+00:04:27,180 --> 00:04:31,540
+di un sito web, ha un collegamento
+
+78
+00:04:31,540 --> 00:04:33,180
+alla sitemap.
+
+79
+00:04:33,480 --> 00:04:37,120
+La sitemap è strutturata in questo modo,
+
+80
+00:04:37,220 --> 00:04:41,180
+e le varie sezioni elencate portano,
+
+81
+00:04:41,180 --> 00:04:45,780
+cliccando, alla sezione corrispondente.
+
+82
+00:04:47,900 --> 00:04:51,260
+Questo è il codice che ci permette
+
+83
+00:04:51,260 --> 00:04:53,940
+l'applicazione del secondo criterio,
+
+84
+00:04:53,940 --> 00:04:55,100
+cioè la sitemap.
+
+85
+00:04:55,100 --> 00:04:58,500
+La sitemap è struttura in questo modo,
+
+86
+00:04:58,500 --> 00:05:01,300
+cioè una lista che contiene
+
+87
+00:05:01,300 --> 00:05:03,440
+al suo interno delle parole
+
+88
+00:05:03,440 --> 00:05:05,980
+che sono cliccabili, che portano
+
+89
+00:05:05,980 --> 00:05:09,020
+alle varie sezioni del  sito.
+
+90
+00:05:09,700 --> 00:05:13,560
+Ogni sezione, al suo interno, nella barra
+
+91
+00:05:13,560 --> 00:05:15,660
+di navigazione, contiene
+
+92
+00:05:15,660 --> 00:05:18,160
+un collegamento alla sitemap.
+
+93
+00:05:18,360 --> 00:05:20,080
+Questo è molto importante
+
+94
+00:05:20,080 --> 00:05:23,200
+per permettere all'utente di capire
+
+95
+00:05:23,200 --> 00:05:27,480
+la sua posizione all'interno della pagina web.
+
+96
+00:05:28,220 --> 00:05:30,280
+Adesso vediamo l'applicazione
+
+97
+00:05:30,280 --> 00:05:32,920
+della terza tecnica, cioè indicare
+
+98
+00:05:32,920 --> 00:05:35,800
+all'utente, la sua posizione all'interno
+
+99
+00:05:35,800 --> 00:05:37,360
+delle barre di navigazione.
+
+100
+00:05:37,560 --> 00:05:39,260
+L'obbiettivo di questa tecnica
+
+101
+00:05:39,280 --> 00:05:41,780
+è proprio aiutare l'utente, fornendo
+
+102
+00:05:41,780 --> 00:05:44,520
+delle informazioni sulla sua posizione
+
+103
+00:05:44,520 --> 00:05:46,960
+corrente nelle barre di navigazione.
+
+104
+00:05:47,220 --> 00:05:49,720
+Questa tecnica è molto utile quando
+
+105
+00:05:49,720 --> 00:05:51,460
+le pagine web devono essere
+
+106
+00:05:51,460 --> 00:05:52,860
+in un preciso ordine.
+
+107
+00:05:53,200 --> 00:05:55,660
+Possiamo fornire all'utente la sua
+
+108
+00:05:55,660 --> 00:05:59,040
+posizione attraverso un'icona, un testo
+
+109
+00:05:59,040 --> 00:06:01,240
+o modificando lo stato dell'elemento.
+
+110
+00:06:01,240 --> 00:06:03,100
+Nel mio caso ho messo uno sfondo
+
+111
+00:06:03,100 --> 00:06:05,900
+colorato alla sezione o alla pagina
+
+112
+00:06:05,900 --> 00:06:07,500
+in cui si trova l'utente.
+
+113
+00:06:07,780 --> 00:06:09,340
+Andiamo a vedere un esempio, qui
+
+114
+00:06:09,340 --> 00:06:11,340
+abbiamo la nostra barra di navigazione
+
+115
+00:06:11,340 --> 00:06:14,380
+in base alla sezione o alla pagina
+
+116
+00:06:14,380 --> 00:06:18,060
+in cui si sposta l'utente, la casella,
+
+117
+00:06:18,060 --> 00:06:22,460
+il pulsante in cui è indicata la sezione
+
+118
+00:06:22,620 --> 00:06:26,080
+si illuminerà, diventerà di colore blu.
+
+119
+00:06:26,180 --> 00:06:29,180
+In questo modo l'utente saprà in quale
+
+120
+00:06:29,180 --> 00:06:32,280
+sezione della pagina si trova.
+
+121
+00:06:33,080 --> 00:06:35,620
+Questo è il codice che ci permette
+
+122
+00:06:35,620 --> 00:06:37,840
+l'applicazione della terza tecnica,
+
+123
+00:06:37,860 --> 00:06:40,800
+cioè indicare all'utente, la sua
+
+124
+00:06:40,800 --> 00:06:43,440
+posizione corrente all'interno
+
+125
+00:06:43,440 --> 00:06:45,300
+delle barre di navigazione.
+
+126
+00:06:45,800 --> 00:06:49,720
+Questo è il codice. Una div che contiene
+
+127
+00:06:49,720 --> 00:06:52,920
+all'interno, delle parole cliccabili,
+
+128
+00:06:53,200 --> 00:06:56,060
+che portano alle varie sezioni
+
+129
+00:06:56,060 --> 00:06:57,960
+della pagina. In questo caso,
+
+130
+00:06:57,960 --> 00:07:00,720
+descrizione, foto e video.
+
+131
+00:07:00,800 --> 00:07:02,680
+Per indicare all'utente la sua
+
+132
+00:07:02,680 --> 00:07:05,880
+posizione, mi sono servito di una classe,
+
+133
+00:07:05,880 --> 00:07:09,140
+in questo caso, "active", per indicare
+
+134
+00:07:09,140 --> 00:07:14,460
+all'utente che quando clicca, il bottone
+
+135
+00:07:14,460 --> 00:07:16,220
+diventerà di colore blu.
+
+136
+00:07:16,480 --> 00:07:18,880
+In questo caso sarà molto intuitivo
+
+137
+00:07:18,880 --> 00:07:21,840
+per l'utente, capire in che posizione
+
+138
+00:07:21,840 --> 00:07:23,940
+della pagina, lui si trovi.
+
+139
+00:07:24,280 --> 00:07:29,280
+Infatti il bottone diventerà blu se
+
+140
+00:07:29,280 --> 00:07:34,780
+si trova nella home, diventerà blu
+
+141
+00:07:34,800 --> 00:07:40,140
+se si trova nella sezione descrizione,
+
+142
+00:07:40,140 --> 00:07:44,940
+nella sezione foto, nella sezione video
+
+143
+00:07:44,940 --> 00:07:46,280
+e così via.
+
+144
+00:07:46,920 --> 00:07:49,780
+Adesso, vediamo l'applicazione della
+
+145
+00:07:49,780 --> 00:07:52,100
+quarta tecnica, una delle ultime
+
+146
+00:07:52,100 --> 00:07:53,900
+tecniche sufficienti,
+
+147
+00:07:54,180 --> 00:07:57,640
+che identifica la relazione di una
+
+148
+00:07:57,640 --> 00:08:00,700
+pagina web con una raccolta più ampia
+
+149
+00:08:00,700 --> 00:08:01,880
+di pagine web.
+
+150
+00:08:02,340 --> 00:08:04,140
+L'obbiettivo di questa tecnica è,
+
+151
+00:08:04,140 --> 00:08:06,220
+consentire agli utenti di
+
+152
+00:08:06,220 --> 00:08:08,660
+identificare che relazione è presente
+
+153
+00:08:08,680 --> 00:08:11,140
+tra la pagina web corrente e altre
+
+154
+00:08:11,140 --> 00:08:13,600
+pagine web della stessa raccolta,
+
+155
+00:08:13,600 --> 00:08:16,000
+ad esempio nello stesso sito web.
+
+156
+00:08:16,420 --> 00:08:18,600
+In alcuni casi, ciò può essere fatto
+
+157
+00:08:18,600 --> 00:08:20,580
+a livello di codice, ad esempio
+
+158
+00:08:20,600 --> 00:08:22,180
+utilizzando l'attributo "rel"
+
+159
+00:08:22,180 --> 00:08:25,060
+dell'elemento "link" in HTML.
+
+160
+00:08:25,060 --> 00:08:27,320
+In altri casi le informazioni
+
+161
+00:08:27,320 --> 00:08:30,720
+necessarie vengono incluse nel titolo
+
+162
+00:08:30,720 --> 00:08:33,540
+della pagina web, come nell'esempio
+
+163
+00:08:33,540 --> 00:08:35,880
+della pagina "Descrizione Criterio".
+
+164
+00:08:35,880 --> 00:08:40,280
+Infatti il titolo è "Criterio 2.4.8 Location",
+
+165
+00:08:40,300 --> 00:08:44,040
+con "Tecniche Sufficienti" accanto, che
+
+166
+00:08:44,040 --> 00:08:48,740
+identifica come, la pagina corrente
+
+167
+00:08:48,740 --> 00:08:52,140
+sia collegata alle altre pagine.
+
+168
+00:08:54,300 --> 00:08:59,260
+Adesso vediamo l'utilizzo dei tag "meta"
+
+169
+00:08:59,320 --> 00:09:01,560
+che servono a fornire delle
+
+170
+00:09:01,560 --> 00:09:03,560
+informazioni aggiuntive,
+
+171
+00:09:03,560 --> 00:09:06,060
+come l'autore, la descrizione,
+
+172
+00:09:06,060 --> 00:09:08,420
+l'argomento trattato nella pagina
+
+173
+00:09:08,420 --> 00:09:09,960
+e anche la lingua.
+
+174
+00:09:10,200 --> 00:09:12,140
+Abbiamo anche la possibilità di usare
+
+175
+00:09:12,200 --> 00:09:14,440
+l'attributo "rel", che permette di
+
+176
+00:09:14,440 --> 00:09:16,380
+indicare che relazione c'è tra un
+
+177
+00:09:16,380 --> 00:09:18,900
+documento corrente e il documento di
+
+178
+00:09:18,900 --> 00:09:20,400
+destinazione "link".
+
+179
+00:09:20,400 --> 00:09:22,500
+Ricordiamo anche l'utilizzo della tag
+
+180
+00:09:22,500 --> 00:09:25,080
+"link" che ci permette il collegamento
+
+181
+00:09:25,080 --> 00:09:27,480
+di una pagina corrente, come
+
+182
+00:09:27,480 --> 00:09:30,580
+per un esempio, con un file CSS o una
+
+183
+00:09:30,580 --> 00:09:32,960
+pagina con le informazioni dell'autore.
+
+184
+00:09:33,380 --> 00:09:35,540
+Bisogna però ricordare che,
+
+185
+00:09:35,540 --> 00:09:37,780
+l'attributo "rel", per funzionare, deve
+
+186
+00:09:37,780 --> 00:09:39,380
+essere sempre accompagnato
+
+187
+00:09:39,380 --> 00:09:42,920
+dall'attributo "href", che identifica
+
+188
+00:09:42,920 --> 00:09:44,920
+la destinazione.
+
+189
+00:09:45,160 --> 00:09:48,220
+Queste tag "link" sono pienamente
+
+190
+00:09:48,220 --> 00:09:50,980
+soddisfatte con l'utilizzo della
+
+191
+00:09:50,980 --> 00:09:54,780
+tecnica "H59", che implementa l'utilizzo
+
+192
+00:09:54,820 --> 00:09:57,060
+delle tag "link" e degli strumenti
+
+193
+00:09:57,060 --> 00:09:58,220
+di navigazione.
+
+194
+00:09:58,560 --> 00:10:00,380
+L'obbiettivo di questa tecnica è
+
+195
+00:10:00,380 --> 00:10:02,720
+descrivere come le tag "link" possono
+
+196
+00:10:02,760 --> 00:10:05,360
+fornire informazioni sulla posizione
+
+197
+00:10:05,360 --> 00:10:07,860
+di una pagina HTML, all'interno di una
+
+198
+00:10:07,860 --> 00:10:12,620
+serie di ampie pagine web o aiutare
+
+199
+00:10:12,620 --> 00:10:15,860
+l'utente ad individuare il contenuto.
+
+200
+00:10:16,520 --> 00:10:19,880
+Il valore degli attributi "rel", indica
+
+201
+00:10:19,880 --> 00:10:21,620
+quale tipo di relazione c'è,
+
+202
+00:10:21,620 --> 00:10:25,220
+e l'attributo "href" fornisce un
+
+203
+00:10:25,220 --> 00:10:27,420
+collegamento al documento corrente
+
+204
+00:10:27,420 --> 00:10:29,560
+con quella relazione.
+
+205
+00:10:29,740 --> 00:10:33,340
+Più tag "link" sono presenti, più saranno
+
+206
+00:10:33,340 --> 00:10:35,340
+presenti informazioni.
+
+207
+00:10:35,760 --> 00:10:38,120
+A livello di codice ho inserito
+
+208
+00:10:38,120 --> 00:10:40,080
+le tag "link" con l'attributo "rel",
+
+209
+00:10:40,080 --> 00:10:43,640
+"href" e un attributo "title", che servono a
+
+210
+00:10:43,640 --> 00:10:46,620
+fornire delle informazioni aggiuntive.
+
+211
+00:10:46,680 --> 00:10:48,940
+Per esempio, io ho aggiunto la pagina
+
+212
+00:10:48,940 --> 00:10:51,140
+principale, cioè "index" e
+
+213
+00:10:51,140 --> 00:10:52,740
+la pagina precedente.
+
+214
+00:10:53,240 --> 00:10:56,060
+L'attributo "rel" che identifica la
+
+215
+00:10:56,060 --> 00:10:57,920
+tipologia del collegamento,
+
+216
+00:10:57,920 --> 00:11:01,220
+l'attributo "href" che serve per identificare
+
+217
+00:11:01,220 --> 00:11:03,120
+la risorsa corrispondente
+
+218
+00:11:03,120 --> 00:11:07,140
+e l'attributo "title" che fornisce un titolo.
+
+219
+00:11:07,320 --> 00:11:10,220
+Infine ricordiamo che le tag "link"
+
+220
+00:11:10,220 --> 00:11:13,360
+e "meta", molto spesso non generano
+
+221
+00:11:13,360 --> 00:11:15,120
+nessun cambiamento agli occhi
+
+222
+00:11:15,120 --> 00:11:17,960
+dell'utente, ma sono molto importanti
+
+223
+00:11:17,960 --> 00:11:20,420
+per i motori di ricerca e browser.
+
+224
+00:11:20,660 --> 00:11:23,760
+Questo è il codice ci permette
+
+225
+00:11:23,760 --> 00:11:26,100
+l'applicazione delle ultime due
+
+226
+00:11:26,100 --> 00:11:28,060
+tecniche sufficienti, cioè
+
+227
+00:11:28,060 --> 00:11:30,720
+"Identificare la relazione di una
+
+228
+00:11:30,720 --> 00:11:33,580
+pagina web con una raccolta più ampia"
+
+229
+00:11:33,580 --> 00:11:37,220
+e l'utilizzo delle tag "link".
+
+230
+00:11:37,500 --> 00:11:40,360
+Qui infatti, in questa pagina, vediamo
+
+231
+00:11:40,360 --> 00:11:43,400
+l'utilizzo delle tag "link" e nella
+
+232
+00:11:43,400 --> 00:11:46,060
+pagina "index" vediamo l'utilizzo
+
+233
+00:11:46,060 --> 00:11:51,060
+delle "meta" tag e un titolo appropriato
+
+234
+00:11:51,060 --> 00:11:54,640
+che indica la relazione della pagina
+
+235
+00:11:54,640 --> 00:11:57,680
+corrente, in questo caso "l'index" con
+
+236
+00:11:57,680 --> 00:12:00,080
+le altre pagine presenti.
+
+237
+00:12:01,120 --> 00:12:05,120
+Adesso vediamo le ultime due tecniche
+
+238
+00:12:05,120 --> 00:12:09,260
+aggiuntive, la prima è "fornire un'
+
+239
+00:12:09,320 --> 00:12:12,360
+intestazione e un piè di pagina" nei
+
+240
+00:12:12,360 --> 00:12:13,960
+documenti pdf.
+
+241
+00:12:14,560 --> 00:12:16,500
+L'obbiettivo di questa tecnica è
+
+242
+00:12:16,520 --> 00:12:19,500
+di aiutare gli utenti a capire dove
+
+243
+00:12:19,500 --> 00:12:22,140
+si trovano in un documento pdf.
+
+244
+00:12:22,140 --> 00:12:24,400
+In questo caso fornendo
+
+245
+00:12:24,400 --> 00:12:26,840
+un'intestazione e un piè di pagina.
+
+246
+00:12:27,080 --> 00:12:30,600
+Intestazioni e piè di pagina aiutano
+
+247
+00:12:30,600 --> 00:12:32,280
+a rendere i contenuti più
+
+248
+00:12:32,280 --> 00:12:35,760
+comprensibili, fornendo informazioni
+
+249
+00:12:35,760 --> 00:12:38,220
+ripetute in modo coerente.
+
+250
+00:12:38,220 --> 00:12:40,980
+In questo caso vediamo, come per
+
+251
+00:12:40,980 --> 00:12:43,420
+esempio può essere un titolo del
+
+252
+00:12:43,440 --> 00:12:46,240
+documento, un capitolo corrente,
+
+253
+00:12:46,240 --> 00:12:48,740
+un'informazione generale sull'autore
+
+254
+00:12:48,740 --> 00:12:51,720
+nell'intestazione. Il Decameron,
+
+255
+00:12:51,720 --> 00:12:53,920
+Capitolo VII, Giovanni Boccaccio,
+
+256
+00:12:53,920 --> 00:12:55,920
+poeta e autore del Decameron...
+
+257
+00:12:56,060 --> 00:12:58,300
+La seconda tecnica aggiuntiva
+
+258
+00:12:58,300 --> 00:13:01,920
+specifica la numerazione delle pagine
+
+259
+00:13:01,920 --> 00:13:05,420
+nei documenti pdf, cioè semplicemente,
+
+260
+00:13:05,420 --> 00:13:07,520
+l'obbiettivo di questa tecnica è
+
+261
+00:13:07,520 --> 00:13:10,040
+aiutare gli utente a capire dove si
+
+262
+00:13:10,040 --> 00:13:12,040
+trovano, in un documento pdf.
+
+263
+00:13:12,520 --> 00:13:15,620
+Può essere inserito un numero di pagina,
+
+264
+00:13:15,620 --> 00:13:19,800
+per esempio, 1, e 2 nella seconda pagina
+
+265
+00:13:19,800 --> 00:13:21,800
+o una data.
+

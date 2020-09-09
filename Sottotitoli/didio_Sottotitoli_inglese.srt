@@ -1,0 +1,1060 @@
+﻿1
+00:00:03,860 --> 00:00:10,840
+Hello professor, today let's analyze Criterion 2.4.8, Location (Position),
+
+2
+00:00:10,840 --> 00:00:15,300
+that is, provide information about the location
+
+3
+00:00:15,300 --> 00:00:18,500
+of the user in a series of web pages.
+
+4
+00:00:18,500 --> 00:00:21,900
+Let's analyze the techniques
+
+5
+00:00:21,900 --> 00:00:24,740
+sufficient and additional ones.
+
+6
+00:00:24,740 --> 00:00:28,260
+Let's go to see them in general first
+
+7
+00:00:28,260 --> 00:00:31,260
+and then we will see them specifically with tests.
+
+8
+00:00:32,220 --> 00:00:34,660
+The first sufficient technique
+
+9
+00:00:34,660 --> 00:00:38,060
+is to provide the user with a breadcrumb.
+
+10
+00:00:38,060 --> 00:00:41,480
+The second is to provide the user with a sitemap.
+
+11
+00:00:41,480 --> 00:00:45,760
+The third is to indicate your current location
+
+12
+00:00:45,760 --> 00:00:48,960
+in the navigation bars
+
+13
+00:00:48,960 --> 00:00:50,960
+of web pages.
+
+14
+00:00:50,960 --> 00:00:54,940
+The fourth is to identify
+
+15
+00:00:54,940 --> 00:00:58,380
+a relationship with a page,
+
+16
+00:00:58,380 --> 00:01:02,280
+with a larger amount of pages.
+
+17
+00:01:02,280 --> 00:01:05,260
+This technique has a sub-technique
+
+18
+00:01:05,260 --> 00:01:10,400
+ie the use of the "link" element, the element "link"
+
+19
+00:01:10,400 --> 00:01:18,100
+that is, those tags that are not visible to the user, such as "meta" tags.
+
+20
+00:01:18,100 --> 00:01:21,380
+Instead the additional techniques are two,
+
+21
+00:01:21,380 --> 00:01:25,480
+the first is to provide in a pdf document
+
+22
+00:01:25,480 --> 00:01:29,480
+a header and a footer.
+
+23
+00:01:29,480 --> 00:01:32,820
+The second, instead, consists in specifying
+
+24
+00:01:32,820 --> 00:01:36,380
+in a pdf document, the page number.
+
+25
+00:01:37,520 --> 00:01:40,080
+Now let's see the application
+
+26
+00:01:40,080 --> 00:01:42,380
+of sufficient techniques.
+
+27
+00:01:42,940 --> 00:01:45,740
+This first page shows us a brief
+
+28
+00:01:45,740 --> 00:01:49,660
+description of my Criterion and the list
+
+29
+00:01:49,660 --> 00:01:52,560
+enough techniques that now
+
+30
+00:01:52,560 --> 00:01:55,360
+we will go to see specifically.
+
+31
+00:01:56,000 --> 00:01:58,360
+Here we see the application of the first
+
+32
+00:01:58,360 --> 00:02:00,360
+technique, breadcrumb navigation,
+
+33
+00:02:00,360 --> 00:02:03,700
+which shows the user its location
+
+34
+00:02:03,700 --> 00:02:07,300
+within a series of web pages.
+
+35
+00:02:07,300 --> 00:02:10,540
+A breadcrumb trail displays
+
+36
+00:02:10,540 --> 00:02:13,540
+also the path it has taken
+
+37
+00:02:13,540 --> 00:02:16,700
+the user to reach a certain web page
+
+38
+00:02:16,700 --> 00:02:19,800
+and always allows the user
+
+39
+00:02:19,800 --> 00:02:22,640
+to go back to the previous pages.
+
+40
+00:02:22,980 --> 00:02:26,240
+Here we have an example, if the user
+
+41
+00:02:26,240 --> 00:02:28,740
+wants to go to a certain page
+
+42
+00:02:28,740 --> 00:02:32,300
+of the website, for example the description
+
+43
+00:02:32,300 --> 00:02:34,300
+of the "Scala dei Turchi" for example,
+
+44
+00:02:34,300 --> 00:02:37,960
+by clicking this button the user
+
+45
+00:02:37,960 --> 00:02:41,340
+he will be told which page he is on
+
+46
+00:02:41,340 --> 00:02:44,740
+and has a chance to return
+
+47
+00:02:44,740 --> 00:02:47,000
+on the previous pages and also
+
+48
+00:02:47,000 --> 00:02:50,080
+on the intial page, on the Home page.
+
+49
+00:02:50,420 --> 00:02:53,320
+This is the code that allows us
+
+50
+00:02:53,320 --> 00:02:55,820
+the application of the first technique,
+
+51
+00:02:55,820 --> 00:02:58,560
+ie breadcrumb navigation
+
+52
+00:02:59,240 --> 00:03:03,900
+It is simply a list it contains
+
+53
+00:03:03,900 --> 00:03:07,800
+the location where the user is located
+
+54
+00:03:07,800 --> 00:03:10,900
+and moving through the various sections
+
+55
+00:03:11,060 --> 00:03:13,980
+we find a list that is modified
+
+56
+00:03:13,980 --> 00:03:16,260
+where the position is always contained
+
+57
+00:03:16,260 --> 00:03:20,080
+of the user, but which allows the user
+
+58
+00:03:20,120 --> 00:03:22,560
+to return to the previous pages,
+
+59
+00:03:22,560 --> 00:03:26,300
+as we see in all these pages.
+
+60
+00:03:26,840 --> 00:03:29,160
+Now, let's see the application of the
+
+61
+00:03:29,160 --> 00:03:32,900
+second technique, provide a sitemap.
+
+62
+00:03:33,180 --> 00:03:35,920
+A sitemap is a web page that
+
+63
+00:03:35,920 --> 00:03:38,780
+allows links to
+
+64
+00:03:38,780 --> 00:03:41,560
+different sections that can be
+
+65
+00:03:41,560 --> 00:03:43,380
+present on a site.
+
+66
+00:03:43,620 --> 00:03:46,500
+To give the possibility that this
+
+67
+00:03:46,500 --> 00:03:48,840
+sitemap is complete,
+
+68
+00:03:49,100 --> 00:03:53,100
+each web page listed in the sitemap,
+
+69
+00:03:53,100 --> 00:03:56,100
+it must contain a link to it.
+
+70
+00:03:56,660 --> 00:04:00,420
+The sitemap serves several purposes,
+
+71
+00:04:00,860 --> 00:04:04,080
+provides a whole overview
+
+72
+00:04:04,380 --> 00:04:06,080
+of the web page,
+
+73
+00:04:06,480 --> 00:04:11,180
+helps users understand what it contains
+
+74
+00:04:11,460 --> 00:04:15,860
+the whole site and how it is organized.
+
+75
+00:04:16,220 --> 00:04:21,580
+And besides, it's very easy to understand.
+
+76
+00:04:21,860 --> 00:04:26,760
+Now let's see an example, each section
+
+77
+00:04:27,180 --> 00:04:31,540
+of a website, has a link
+
+78
+00:04:31,540 --> 00:04:33,180
+to the sitemap.
+
+79
+00:04:33,480 --> 00:04:37,120
+The sitemap is structured like this,
+
+80
+00:04:37,220 --> 00:04:41,180
+and the various sections listed lead,
+
+81
+00:04:41,180 --> 00:04:45,780
+by clicking on the corresponding section.
+
+82
+00:04:47,900 --> 00:04:51,260
+This is the code that allows us
+
+83
+00:04:51,260 --> 00:04:53,940
+the application of the second criterion,
+
+84
+00:04:53,940 --> 00:04:55,100
+ie the sitemap.
+
+85
+00:04:55,100 --> 00:04:58,500
+The sitemap is structured like this,
+
+86
+00:04:58,500 --> 00:05:01,300
+that is, a list that contains
+
+87
+00:05:01,300 --> 00:05:03,440
+inside it some words
+
+88
+00:05:03,440 --> 00:05:05,980
+which are clickable, which lead
+
+89
+00:05:05,980 --> 00:05:09,020
+to the various sections of the site.
+
+90
+00:05:09,700 --> 00:05:13,560
+Each section, inside it, in the bar
+
+91
+00:05:13,560 --> 00:05:15,660
+of navigation, contains
+
+92
+00:05:15,660 --> 00:05:18,160
+a link to the sitemap.
+
+93
+00:05:18,360 --> 00:05:20,080
+This is very important
+
+94
+00:05:20,080 --> 00:05:23,200
+to allow the user to understand
+
+95
+00:05:23,200 --> 00:05:27,480
+its position within the web page.
+
+96
+00:05:28,220 --> 00:05:30,280
+Now let's see the application
+
+97
+00:05:30,280 --> 00:05:32,920
+of the third technique, that is, indicate
+
+98
+00:05:32,920 --> 00:05:35,800
+to the user, its position inside
+
+99
+00:05:35,800 --> 00:05:37,360
+navigation bars.
+
+100
+00:05:37,560 --> 00:05:39,260
+The goal of this technique
+
+101
+00:05:39,280 --> 00:05:41,780
+it's really helping the user by providing
+
+102
+00:05:41,780 --> 00:05:44,520
+information about its current
+
+103
+00:05:44,520 --> 00:05:46,960
+location in the navigation bars.
+
+104
+00:05:47,220 --> 00:05:49,720
+This technique is very useful when
+
+105
+00:05:49,720 --> 00:05:51,460
+web pages must be
+
+106
+00:05:51,460 --> 00:05:52,860
+in a specific order.
+
+107
+00:05:53,200 --> 00:05:55,660
+We can provide you with yours
+
+108
+00:05:55,660 --> 00:05:59,040
+position through an icon, a text
+
+109
+00:05:59,040 --> 00:06:01,240
+or by changing the state of the item.
+
+110
+00:06:01,240 --> 00:06:03,100
+In my case I put a colored
+
+111
+00:06:03,100 --> 00:06:05,900
+background to the section or page
+
+112
+00:06:05,900 --> 00:06:07,500
+where the user is located.
+
+113
+00:06:07,780 --> 00:06:09,340
+Let's go see an example, here
+
+114
+00:06:09,340 --> 00:06:11,340
+we have our own navigation bar
+
+115
+00:06:11,340 --> 00:06:14,380
+by section or page
+
+116
+00:06:14,380 --> 00:06:18,060
+in which the user, the box,
+
+117
+00:06:18,060 --> 00:06:22,460
+the button where the section is indicated,
+
+118
+00:06:22,620 --> 00:06:26,080
+will light up, turn blue.
+
+119
+00:06:26,180 --> 00:06:29,180
+This way the user will know which one
+
+120
+00:06:29,180 --> 00:06:32,280
+section of the page is located.
+
+121
+00:06:33,080 --> 00:06:35,620
+This is the code that allows us
+
+122
+00:06:35,620 --> 00:06:37,840
+the application of the third technique,
+
+123
+00:06:37,860 --> 00:06:40,800
+that is to indicate to the user, his
+
+124
+00:06:40,800 --> 00:06:43,440
+current location inside
+
+125
+00:06:43,440 --> 00:06:45,300
+navigation bars.
+
+126
+00:06:45,800 --> 00:06:49,720
+This is the code. A div that contains
+
+127
+00:06:49,720 --> 00:06:52,920
+inside, clickable words,
+
+128
+00:06:53,200 --> 00:06:56,060
+which lead to the various sections
+
+129
+00:06:56,060 --> 00:06:57,960
+of the page. In this case,
+
+130
+00:06:57,960 --> 00:07:00,720
+description, photos and videos.
+
+131
+00:07:00,800 --> 00:07:02,680
+To indicate to the user his
+
+132
+00:07:02,680 --> 00:07:05,880
+position, I used a class,
+
+133
+00:07:05,880 --> 00:07:09,140
+in this case, "active", to indicate
+
+134
+00:07:09,140 --> 00:07:14,460
+to the user who clicks, the button
+
+135
+00:07:14,460 --> 00:07:16,220
+will turn blue.
+
+136
+00:07:16,480 --> 00:07:18,880
+In this case it will be very intuitive
+
+137
+00:07:18,880 --> 00:07:21,840
+for the user, understand in what position
+
+138
+00:07:21,840 --> 00:07:23,940
+of the page, he is.
+
+139
+00:07:24,280 --> 00:07:29,280
+In fact the button will turn blue if
+
+140
+00:07:29,280 --> 00:07:34,780
+is in the home, it will turn blue
+
+141
+00:07:34,800 --> 00:07:40,140
+if it is in the description section,
+
+142
+00:07:40,140 --> 00:07:44,940
+in the photo section, in the video section
+
+143
+00:07:44,940 --> 00:07:46,280
+and so on.
+
+144
+00:07:46,920 --> 00:07:49,780
+Now, let's see the application of the
+
+145
+00:07:49,780 --> 00:07:52,100
+fourth technique, one of the last
+
+146
+00:07:52,100 --> 00:07:53,900
+sufficient techniques,
+
+147
+00:07:54,180 --> 00:07:57,640
+which identifies the relationship of a
+
+148
+00:07:57,640 --> 00:08:00,700
+web page with a larger collection
+
+149
+00:08:00,700 --> 00:08:01,880
+of web pages.
+
+150
+00:08:02,340 --> 00:08:04,140
+The goal of this technique is,
+
+151
+00:08:04,140 --> 00:08:06,220
+allow users to
+
+152
+00:08:06,220 --> 00:08:08,660
+identify what relationship is present
+
+153
+00:08:08,680 --> 00:08:11,140
+between the current web page and others
+
+154
+00:08:11,140 --> 00:08:13,600
+web pages of the same collection,
+
+155
+00:08:13,600 --> 00:08:16,000
+for example on the same website.
+
+156
+00:08:16,420 --> 00:08:18,600
+In some cases, this can be done
+
+157
+00:08:18,600 --> 00:08:20,580
+programmatically, for example
+
+158
+00:08:20,600 --> 00:08:22,180
+using the "rel" attribute
+
+159
+00:08:22,180 --> 00:08:25,060
+of the "link" element in HTML.
+
+160
+00:08:25,060 --> 00:08:27,320
+In other cases the necessary
+
+161
+00:08:27,320 --> 00:08:30,720
+information are included in the title
+
+162
+00:08:30,720 --> 00:08:33,540
+of the web page, as in the example
+
+163
+00:08:33,540 --> 00:08:35,880
+of the "Descrizione Criterio" page.
+
+164
+00:08:35,880 --> 00:08:40,280
+Indeed the title is "Criterio 2.4.8 Location",
+
+165
+00:08:40,300 --> 00:08:44,040
+with "Tecniche Sufficienti" next, that
+
+166
+00:08:44,040 --> 00:08:48,740
+identifies as, the current page
+
+167
+00:08:48,740 --> 00:08:52,140
+is linked to other pages.
+
+168
+00:08:54,300 --> 00:08:59,260
+Now let's see the use of "meta" tags
+
+169
+00:08:59,320 --> 00:09:01,560
+which serve to provide
+
+170
+00:09:01,560 --> 00:09:03,560
+additional information,
+
+171
+00:09:03,560 --> 00:09:06,060
+like the author, the description,
+
+172
+00:09:06,060 --> 00:09:08,420
+the topic covered on the page
+
+173
+00:09:08,420 --> 00:09:09,960
+and also the language.
+
+174
+00:09:10,200 --> 00:09:12,140
+We also have the option to use
+
+175
+00:09:12,200 --> 00:09:14,440
+the "rel" attribute, which allows you to
+
+176
+00:09:14,440 --> 00:09:16,380
+indicate what relationship there is between a
+
+177
+00:09:16,380 --> 00:09:18,900
+current document and the document of
+
+178
+00:09:18,900 --> 00:09:20,400
+destination "link".
+
+179
+00:09:20,400 --> 00:09:22,500
+We also remember the use of the tag
+
+180
+00:09:22,500 --> 00:09:25,080
+"link" that allows us to link
+
+181
+00:09:25,080 --> 00:09:27,480
+of a current page, such as
+
+182
+00:09:27,480 --> 00:09:30,580
+for an example, with a CSS file or a
+
+183
+00:09:30,580 --> 00:09:32,960
+page with author information.
+
+184
+00:09:33,380 --> 00:09:35,540
+However, we must remember that
+
+185
+00:09:35,540 --> 00:09:37,780
+to work, the "rel" attribute must
+
+186
+00:09:37,780 --> 00:09:39,380
+always be accompanied
+
+187
+00:09:39,380 --> 00:09:42,920
+from the "href" attribute, which identifies
+
+188
+00:09:42,920 --> 00:09:44,920
+the destination.
+
+189
+00:09:45,160 --> 00:09:48,220
+These "link" tags are fully
+
+190
+00:09:48,220 --> 00:09:50,980
+satisfied with the use of the
+
+191
+00:09:50,980 --> 00:09:54,780
+technique "H59", which implements the use
+
+192
+00:09:54,820 --> 00:09:57,060
+"link" tags and navigation
+
+193
+00:09:57,060 --> 00:09:58,220
+tools.
+
+194
+00:09:58,560 --> 00:10:00,380
+The goal of this technique is
+
+195
+00:10:00,380 --> 00:10:02,720
+describe how "link" tags can
+
+196
+00:10:02,760 --> 00:10:05,360
+provide location information
+
+197
+00:10:05,360 --> 00:10:07,860
+of an HTML page, within a
+
+198
+00:10:07,860 --> 00:10:12,620
+series of extensive web pages or help
+
+199
+00:10:12,620 --> 00:10:15,860
+the user to locate the content.
+
+200
+00:10:16,520 --> 00:10:19,880
+The value of the "rel" attributes indicates
+
+201
+00:10:19,880 --> 00:10:21,620
+what kind of relation is there,
+
+202
+00:10:21,620 --> 00:10:25,220
+and the "href" attribute provides a
+
+203
+00:10:25,220 --> 00:10:27,420
+link to current document
+
+204
+00:10:27,420 --> 00:10:29,560
+with that relation.
+
+205
+00:10:29,740 --> 00:10:33,340
+The more "link" tags there are, the more they will be
+
+206
+00:10:33,340 --> 00:10:35,340
+present information.
+
+207
+00:10:35,760 --> 00:10:38,120
+Programmatically I have entered
+
+208
+00:10:38,120 --> 00:10:40,080
+the "link" tags with the "rel" attribute,
+
+209
+00:10:40,080 --> 00:10:43,640
+"href" and a "title" attribute, which are for
+
+210
+00:10:43,640 --> 00:10:46,620
+provide additional information.
+
+211
+00:10:46,680 --> 00:10:48,940
+For example, I added the main
+
+212
+00:10:48,940 --> 00:10:51,140
+page, ie "index" and
+
+213
+00:10:51,140 --> 00:10:52,740
+the previous page.
+
+214
+00:10:53,240 --> 00:10:56,060
+The "rel" attribute that identifies the
+
+215
+00:10:56,060 --> 00:10:57,920
+type of connection,
+
+216
+00:10:57,920 --> 00:11:01,220
+the "href" attribute that is used to identify
+
+217
+00:11:01,220 --> 00:11:03,120
+the corresponding resource
+
+218
+00:11:03,120 --> 00:11:07,140
+and the "title" attribute which provides a title.
+
+219
+00:11:07,320 --> 00:11:10,220
+Finally, remember that the "link" tags
+
+220
+00:11:10,220 --> 00:11:13,360
+and "meta", very often do not generate
+
+221
+00:11:13,360 --> 00:11:15,120
+no change in the eyes
+
+222
+00:11:15,120 --> 00:11:17,960
+of the user, but they are very important
+
+223
+00:11:17,960 --> 00:11:20,420
+for search engines and browsers.
+
+224
+00:11:20,660 --> 00:11:23,760
+This is the code allows us
+
+225
+00:11:23,760 --> 00:11:26,100
+the application of the last two
+
+226
+00:11:26,100 --> 00:11:28,060
+sufficient techniques, that is
+
+227
+00:11:28,060 --> 00:11:30,720
+"Identify the relation of a
+
+228
+00:11:30,720 --> 00:11:33,580
+web page with a larger collection"
+
+229
+00:11:33,580 --> 00:11:37,220
+and the use of "link" tags.
+
+230
+00:11:37,500 --> 00:11:40,360
+Here, in fact, on this page, we see
+
+231
+00:11:40,360 --> 00:11:43,400
+the use of "link" tags and in the
+
+232
+00:11:43,400 --> 00:11:46,060
+page "index" we see the use
+
+233
+00:11:46,060 --> 00:11:51,060
+some "meta" tags and an appropriate title
+
+234
+00:11:51,060 --> 00:11:54,640
+indicating the relation of the current
+
+235
+00:11:54,640 --> 00:11:57,680
+page, in this case "index" with
+
+236
+00:11:57,680 --> 00:12:00,080
+the other pages present.
+
+237
+00:12:01,120 --> 00:12:05,120
+Now let's see the last two techniques
+
+238
+00:12:05,120 --> 00:12:09,260
+additional, the first is "provide a
+
+239
+00:12:09,320 --> 00:12:12,360
+header and footer" in
+
+240
+00:12:12,360 --> 00:12:13,960
+pdf documents.
+
+241
+00:12:14,560 --> 00:12:16,500
+The goal of this technique is
+
+242
+00:12:16,520 --> 00:12:19,500
+to help users understand where
+
+243
+00:12:19,500 --> 00:12:22,140
+they are found in a pdf document.
+
+244
+00:12:22,140 --> 00:12:24,400
+In this case by providing
+
+245
+00:12:24,400 --> 00:12:26,840
+a header and a footer.
+
+246
+00:12:27,080 --> 00:12:30,600
+Headers and footers help
+
+247
+00:12:30,600 --> 00:12:32,280
+to make the content more
+
+248
+00:12:32,280 --> 00:12:35,760
+understandable, providing information
+
+249
+00:12:35,760 --> 00:12:38,220
+repeated consistently.
+
+250
+00:12:38,220 --> 00:12:40,980
+In this case we see, as for
+
+251
+00:12:40,980 --> 00:12:43,420
+example can be a title of the
+
+252
+00:12:43,440 --> 00:12:46,240
+document, a current chapter,
+
+253
+00:12:46,240 --> 00:12:48,740
+a general information about the author
+
+254
+00:12:48,740 --> 00:12:51,720
+in the header. The Decameron,
+
+255
+00:12:51,720 --> 00:12:53,920
+Chapter VII, Giovanni Boccaccio,
+
+256
+00:12:53,920 --> 00:12:55,920
+poet and author of the Decameron...
+
+257
+00:12:56,060 --> 00:12:58,300
+The second additional technique
+
+258
+00:12:58,300 --> 00:13:01,920
+specifies the page numbering
+
+259
+00:13:01,920 --> 00:13:05,420
+in pdf documents, that is simply,
+
+260
+00:13:05,420 --> 00:13:07,520
+the goal of this technique is
+
+261
+00:13:07,520 --> 00:13:10,040
+help users understand where to
+
+262
+00:13:10,040 --> 00:13:12,040
+find, in a pdf document.
+
+263
+00:13:12,520 --> 00:13:15,620
+A page number can be entered,
+
+264
+00:13:15,620 --> 00:13:19,800
+for example, 1, and 2 on the second page
+
+265
+00:13:19,800 --> 00:13:21,800
+or a date.
+
